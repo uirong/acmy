@@ -11,6 +11,7 @@ public class CircleChild extends Circle { // 원의 둘레가 원주율
 		this.angle=angle;	
 	}
 	public double getArea() { // 오버라이딩
-		return 2* radius*radius*PI*(angle/360); // 원주율 구하는 방법
+		return 2* radius*radius*PI*(angle/360.0); // 원주율 구하는 방법
+						// 이곳에 정수를 입력하면 소수점이 안나온다
 	}	
 }
