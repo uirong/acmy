@@ -1,19 +1,16 @@
-package Inheritance;
+package ex01_Inheritance;
 
 public class Parent {
+	int x;
+	int y;
 	
+	Parent(){ // 실제로는 기본 생성자는 생략 할 수 있기 때문에 굳이 안적지만 내부에는 있다
+		// 부모 클래스를 호출 할 수 있다
+		super(); // 모든 클래스는 Object클래스를 상속 받는다... 하지만 역할이 없기 때문에 생략가능
+	} // 생략가능
 	
-	// 상속
-	// 두 개 이상의 클래스와 부모와 자식을 개념으로 관계를 맺는 것
-	// 상속의 대상은 변수와 메소드이다. 나머지는 대상이 아니다
-	// 상속에 상속이 가능하다
-	// 단일 상속(클래스 한 개)만 가능하다
-	// 모든 클래스는 Object클래스를 상속받는다
-	
-
-	int age;
-	
-	void add(int x,int y) {
-		System.out.println(x+y);
+	Parent(int x,int y){
+		this.x=x;
+		this.y=y;
 	}
 }
