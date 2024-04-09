@@ -16,6 +16,11 @@ public class CarTest {
 		// 자식 타입이 부모타입으로 캐스팅이되면 자식들의 타입은 사용 할 수 없다
 //		car.water(); // water을 받고 싶으면 fire로 타입 정의를 해줘야한다 
 
+		fe2=(FireEngine)car; // Down Casting 부모타입 -> 자식타입
+		// 참조할 수 있는 객체의 개수가 달라진다. fe2에서 사용 가능한 객체 개수 3
+		fe2.water();
+		fe2.driver();
+		fe2.stop();
 	}
 
 }
