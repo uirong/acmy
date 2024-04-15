@@ -4,11 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
 
 //1) lombok을 사용하여 하는법
 @AllArgsConstructor
 @EqualsAndHashCode
+@NoArgsConstructor
+// 오버라이딩 하는 이유는 생성시 생성자와 같은 객체와 두개가 있다고 하기 위해 EqualsOverride
+// 오버라이딩이 되면 같이 돼서 동일한 hashcode를 특정 목적에 맞게 사용하기 위해 equals와 같은 해시코드가 만들어지도
+	
 public class Person {
 	long id;
 	String name;
