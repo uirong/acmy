@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cssStyle.css">
+    <style>
+        i{ color: #ff6a00; display: block;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <b>css 적용방법</b>
+        </li>
+        <li>
+            1. 인라인 작성 >>> style=""
+        </li>
+        <li>
+            2. 내부에 작성방식 >>> < style > < /style >
+        </li>
+        <li>
+            3. 외부에 작성방식 >>> 별도의 파일 작성 (xxx.css)
+        </li>
+    </ul>
+    <span style="color:#ff0000"> 학원 의연</span> <!--인라인 작성-->
+    <i>학원 의연</i>
+    
+</body>
+</html>
