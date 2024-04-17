@@ -1,0 +1,10 @@
+*{
+    margin: 0; padding: 0;
+    background-color:rgba(39, 98, 55,0.5);
+}
+
+/* all */
+
+ul{
+    list-style: none;
+}
