@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조선택자</title>
+    <style>
+        /* 특정위치에 자식요소 선택자 */
+        /* 특정위치에 있는 요소를 찾는 방법 */
+
+        /* .contain{display: none;} */
+        .contain .content p:nth-child(3){ background-color: #b2ceff;}
+        .contain .content p:nth-of-type(3){ background-color: #baffb2;}
+
+        .contain ul::after{ content: ''; display: block; clear: both;}
+        .contain ul li{list-style: none; float: left; font-size: 24px;}
+        .contain ul li:nth-child(2n){background-color: #ffd6b2; }
+        /* 짝수 */
+        .contain ul li:nth-child(2n+1){background-color: #ffb2b2; }
+        /* 홀수 */
+
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <ul>
+            <li>내용1</li>
+            <li>내용2</li>
+            <li>내용3</li>
+            <li>내용4</li>
+            <li>내용5</li>
+            <li>내용6</li>
+            <li>내용7</li>
+        </ul>
+
+        <div class="content">
+            <h2>이용안내</h2>
+            <p>더 넓은 세상, 더 나은 미래를 위한 아시아</p>
+            <p>p:nth-child(3) : #b2ceff</p>
+            <h2>객실 소개</h2>
+            <p>nth-of-type(3) : #baffb2</p>
+            <h2>예약 방법 및 요금</h2>
+            <p>전 상품 무료배송 타임딜</p>
+        </div>
+    </div>
+</body>
+</html>
