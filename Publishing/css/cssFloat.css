@@ -1,0 +1,22 @@
+div::after {
+    content: ''; clear: both; display: block;
+}
+img{
+    float: left;
+}
+ul{
+    list-style: none; font-size: 24px;
+}
+.menu1::after{
+    content: ''; clear: both; display: block;
+}
+.menu1 li{
+    float: left; margin-right: 10px;
+    border: 1px solid #000; box-sizing: border-box; padding: 20px 15px;
+}
+
+.menu0 li{
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 10px; margin-right: 5px;
+}
