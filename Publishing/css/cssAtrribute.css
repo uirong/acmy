@@ -1,0 +1,62 @@
+*{margin: 0; padding: 0;}
+/* all set */
+
+body{
+    font-size: 20px;
+}
+h1{
+    font-family: Nanum Myeongjo; color: rgb(255, 206, 114);
+}
+div ol li:first-child{
+    color: slateblue;
+}
+div ol li:nth-child(2){
+    color: #88ff38;
+}
+div ol li:nth-child(3){
+    color: rgb(255, 111, 004);
+}
+div ol li:last-child{
+    color: rgba(100, 55, 241, 0.5);
+}
+
+p{
+    font-weight: 500; font-style: italic;
+}
+h2{
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+/*  ! ! ! ! */
+span{
+    display: block; text-align: center;
+}
+strong{
+    display: block; text-align: justify;
+}
+
+/*  ! ! ! ! */
+.wrap>*{
+    width:600px; border:1px solid #222; padding:10px; margin:10px;
+  }
+.wrap .small-line{
+    line-height: 0.7;
+}
+.wrap .big-line{
+    line-height: 5;
+}
+/*  ! ! ! ! */
+.link>*{display: block; font-size: 30px;}
+.link a:first-child{ text-decoration: none;}
+.link a:nth-child(2){ text-decoration: line-through;}
+.link a:nth-child(3){ text-decoration: overline;}
+.link a:last-child{ text-decoration: underline;}
+
+.contain ol:last-of-type{list-style: lower-roman;}
+
+table{ width: 20%; height: 400px; text-align: center;}
+table, td{
+    border: 1px solid #000; border-collapse: collapse;
+}
