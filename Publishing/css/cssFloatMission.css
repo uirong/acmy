@@ -1,0 +1,60 @@
+*{margin: 0; padding: 0;}
+li{list-style: none; font-size: 18px;}
+/* all set */
+
+.wrap{
+    width: 1200px; margin: 0 auto;
+}
+.wrap header{
+    margin-top: 100px; background-color: rgba(203, 255, 173, 0.5);
+    width: 100%; height: 150px;
+}
+.wrap header nav{
+    
+}
+
+.wrap header nav:after{
+    content: ''; clear: both; display: block;
+}
+.wrap header nav ul{
+    float: right; margin-top: 70px;
+}
+.wrap header nav ul::after{
+    content: ''; clear: both; display: block;
+}
+.wrap header nav ul li{
+    float: left; margin-right: 20px;
+}
+
+/* top fine */
+
+.wrap section{
+    width: 100%; background-color: rgba(173, 180, 255, 0.5);
+    height: 600px; position: relative;
+}
+
+.wrap section::after{
+    content: ''; display: block; clear: both;
+}
+.wrap section div:first-of-type{
+    float: left; height: 100%; width: 20%;
+}
+.wrap section div:last-of-type{
+    float: right; height: 30%; width: 30%; position: absolute; right: 5%; top: 30%;
+}
+.wrap section div span{
+    background-color: #333; color: #fff;
+    display: block; width: 100%; height: 100%; text-align: center;
+}
+
+/* mid fine */
+
+footer{
+    width: 100%; height: 50px; background-color: #ddb5b5;
+}
+footer ul::after{
+    content: ''; display: block; clear: both;
+}
+footer ul li{
+    float: left; margin: 15px;
+}
