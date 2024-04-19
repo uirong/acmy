@@ -1,0 +1,51 @@
+*{ margin: 0; padding: 0;}
+
+/* all set */
+
+/* body{
+    background-image: url(../images/picture1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 백분율, px,left,center
+    background-size: 300px 300px;
+} 
+*/
+/* body fine */
+
+ul,ol{
+    list-style: none;
+    margin-left: 30px;
+}
+div ul li{
+    background-image: url(../images/ico1.png);
+    background-repeat: no-repeat; background-position: left center;
+    padding-left: 50px; line-height: 40px;
+}
+
+/* div fine */
+
+div ol{
+    margin: 50px auto; width: 605px; background-color: #dadada;
+    padding: 10px;
+}
+div ol li{
+    float: left; 
+    width: 100px; height: 30px;
+    line-height: 30px; text-align: center;
+}
+div ol::after{
+    content: ''; display: block; clear: both;
+}
+div ol li:not(:last-of-type){
+    padding-right: 5px;
+    box-sizing: border-box;
+    border-right: 1px solid #666;
+}
+div ol li a:link{
+    color: #000; text-decoration: none; display: block;
+}
+div ol li:hover {
+    background-color: #355135;
+}
+div ol li:hover a{
+    color: #fff;
+}
