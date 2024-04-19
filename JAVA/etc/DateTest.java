@@ -14,7 +14,7 @@ public class DateTest {
 		Date today=new Date();
 		System.out.println(today);
 		System.out.println(today.getYear()+ 1900); // 1900년도를 기준으로 해서 흘렀다 ... 2024년은 1900에서 124번이 지났다는 뜻
-		System.out.println(today.getMonth()+1); // 프로그램 특성상 0~11 월 이
+		System.out.println(today.getMonth()+1); // 프로그램 특성상 0~11 월 이다
 		*/
 		
 		/*
@@ -23,11 +23,11 @@ public class DateTest {
 		System.out.println(cal);
 		System.out.println(cal.get(Calendar.YEAR)); 		// static하고 final한 상수 이기 때문에 (Calendar. ??)로 작성
 		System.out.println(cal.get(Calendar.MONTH)+1); 		// 0~11이기 때문에 +1해주기
-		System.out.println(cal.get(Calendar.WEEK_OF_YEAR)); // 이번주는 전체 달의 몇째주?
+		System.out.println(cal.get(Calendar.WEEK_OF_YEAR)); 	// 이번주는 전체 달의 몇째주?
 		System.out.println(cal.get(Calendar.DATE)); 		// 오늘 일
-		System.out.println(cal.get(Calendar.DAY_OF_WEEK));  // 1:일요일 ... 7:토요일
-		System.out.println(cal.get(Calendar.HOUR));			// 12시간제
-		System.out.println(cal.get(Calendar.HOUR_OF_DAY));  // 24시간제 
+		System.out.println(cal.get(Calendar.DAY_OF_WEEK));  	// 1:일요일 ... 7:토요일
+		System.out.println(cal.get(Calendar.HOUR));		// 12시간제
+		System.out.println(cal.get(Calendar.HOUR_OF_DAY));	// 24시간제 
 		System.out.println(cal.get(Calendar.MINUTE)); 
 		System.out.println(cal.get(Calendar.SECOND));
 		 
