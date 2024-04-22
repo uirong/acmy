@@ -1,0 +1,75 @@
+/* body{
+    background-image: url('../images/bg1.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrap h1{
+    font-size: 5vw; text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    body{
+        background-image: url('../images/bg1.jpeg') no-repeat fixed;
+        background-size: cover;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        background-image: url('../images/bg2.jpeg') no-repeat fixed;
+        background-size: cover;
+    }
+}
+@media screen and (max-width:320px) {
+    body{
+        background-image: url('../images/bg3.jpeg') no-repeat fixed;
+        background-size: cover;
+    }
+} */
+
+/* wrap fine */
+
+.flex .container,.flex2 .container{
+    display: flex; width: 700px; background-color: #eee; border: 1px solid #222;
+    margin-bottom: 30px;
+}
+.flex .container .box{
+    background-color: #654949;
+}
+.flex .container .box, .flex2 .container .box{
+    width: 80px; margin: 5px; padding: 5px 45px;
+}
+.flex #opt1{
+    flex-direction: row; justify-content: flex-start;
+}
+.flex #opt2{
+    flex-direction: row-reverse;
+
+    justify-content: space-around;
+}
+.flex #opt3{
+    flex-direction: column;
+}
+.flex #opt4{
+    flex-direction: column-reverse;
+}
+.flex .container div p,
+.flex2 .container div p{
+    color: #fff; text-align: center;
+}
+.flex2 .container .box{
+    background-color: #496550;
+}
+
+
+.flex2 #opt1{
+    flex-wrap: nowrap;
+}
+.flex2 #opt2{
+    flex-wrap: wrap;
+}
+.flex2 #opt3{
+    flex-wrap: wrap-reverse;
+}
+ 
