@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+    <style>
+        #wrapper1{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            /* 열의 크기가 넓어지면 어떻게 할건지 ... 균등하게 늘어나야하는데 최소 200px부터~*/
+            /* 빈공간을 채워서 전체를 채운다 */
+            margin-bottom: 20px;
+         } /* auto fit 설명*/
+        #wrapper2{
+            display: grid; grid-template-columns: repeat(auto-fill(200px,1fr));
+            /* 빈공간을 메꾸지 않는다 200px을 그대로 유지하면서 요소를 관리한다 */
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 20px 30px;
+        }
+
+        .items{
+            padding: 15px;
+            background-color: #eee;
+        }
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <h1>auto-fit일 때</h1>
+    <div id="wrapper1">            
+      <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt magni voluptatem.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nulla corrupti porro!</div>
+      <div class="items">Lorem ipsum dolor sit.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quos!</div>
+      <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro odit quam sit.</div>
+    </div>
+
+    <h1>auto-fill일 때</h1>
+    <div id="wrapper2">            
+      <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt magni voluptatem.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nulla corrupti porro!</div>
+      <div class="items">Lorem ipsum dolor sit.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quos!</div>
+      <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro odit quam sit.</div>
+    </div>
+</body>
+</html>

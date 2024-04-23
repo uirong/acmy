@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid4</title>
+    <style>
+        #wrapper{
+            width: 700px; display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+            grid-template-areas: "box1 box1 box1" "box2 box3 box3" "box2 .  box4" ;
+            /* 구조를 어떻게 만들 것인지 정의하는 것 */
+            /* area에서 아무것도 표시 안하고 싶은 부분에는 .을 찍어 표현한다 ==> null== . */
+        }
+
+        .box{
+            padding: 15px; color: #fff; font-weight: 700; text-align: center;
+        }
+        .box1{
+            background-color: #ffeb36;
+            grid-column: 1/4;
+            /* 1번부터 4번중에 1만 차지 한다 */
+        }
+        .box2{
+            background-color: #3689ff;
+            grid-row: 2/4;
+            /* 2번에서 시작해서 4번까지 채운다 */
+            grid-column-start: 1;
+            /* column 시작점 1 */
+        }
+        .box3{
+            background-color: #86ff36;
+            grid-column: 2/4;
+            /* 2칸에서 시작해서 4끝까지 열을 채움 */
+            grid-row-start: 2;
+            /* 줄의 시작점을 2로 지정 */
+        }
+        .box4{
+            background-color: #d036ff;
+            /* grid-column: 3/4; */
+            grid-column-start: 3;
+            grid-row-start: 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+      </div>
+</body>
+</html>

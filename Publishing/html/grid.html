@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        #wrapper{
+            display: grid;
+
+            /* grid-template-columns: 200px 200px 200px 200px;  */
+            /* 컬럼을 200px 200px 200px 200px ...  */
+            /* 절대 크기 columns */
+
+            grid-template-columns: 2fr 1fr 2fr;
+            /* 상대크기 columns : 균등하게 한칸씩 ... 반응형 */
+            /* fr : 숫자 비율대로 크기를 나눈다 */
+            /* 2fr 1fr 2fr :  가운데에 있는 컨텐츠는 1 양 옆은 2 ==> 2:1:2 */
+            grid-template-columns: repeat(3,1fr);
+
+            grid-template-rows: 100px;
+            /* 각 행의 크기 */
+            grid-template-rows: minmax(100px,auto);
+            /* 높이 auto설정  */
+
+        }
+        .items{
+            padding: 10px; background-color: #eee;
+        }
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, reprehenderit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+      <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+      <div class="items">Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+      <div class="items">Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
+      <div class="items">Lorem, ipsum dolor.</div>
+    </div>
+</body>
+</html>
