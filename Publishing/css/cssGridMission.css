@@ -1,0 +1,223 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+    list-style: none;
+}
+/* all set */
+
+header{
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    height: 880px; background-size: 100% 100%;
+}
+header nav{
+    display: grid; grid-template-columns: auto auto;
+    justify-content: space-between;
+    /* 컨텐츠를 양 옆으로 벌리기 */
+    padding: 20px 20px;
+}
+header nav .logo{
+    /* 글자 취급을 받기 때문에 font 속성 넣어주기 */
+    color: #fff; font-size: 35px; font-weight: 700;
+}
+header nav .menu ul{
+    display: grid; grid-template-columns: auto auto auto auto;
+    /* auto == 1fr 똑같음 */
+    grid-gap: 30px;
+}
+header nav .menu ul li a{
+    text-decoration: none; color: #fff; font-weight: 700;
+}
+/* nav fine */
+
+header section >div{
+    background-color: #fff; position: relative; left: 50px;
+    width: 430px; height: ; display: inline-block; padding: 20px 30px;
+    box-shadow: 0 2px 2px 0 rgb(214, 214, 214); border-radius: 6px;
+}
+header section >div .search__title{
+    padding: 10px; font-size: 30px; font-weight: 700; color: rgb(75, 74, 74);
+}
+header section >div table{
+    width: 100%;
+}
+header section >div table .serch__sub__title{
+    padding: 10px 0; font-size: 12px; font-weight: 700;
+}
+header section >div table .search__input{
+    height: 45px; width: 100%; color: rgb(100, 98, 98); font-size: 15px;
+    border: 1px solid rgb(230,227,227);
+}
+header section >div .search__button{
+    display: grid; justify-content: end; padding: 20px 0;
+}
+header section >div .search__button button{
+    background-color: #ff5a5f; color: #fff; height: 45px; font-size: 15px;
+    font-weight: 700; border-radius: 6px; border: none; cursor: pointer; padding: 0 15px;
+}
+
+/* header fine */
+main{
+    margin: 30px auto; width: 1200px;
+}
+main section .sec__title{
+    margin: 0 0 20px 0;
+}
+main section .sec__title, 
+main section .sec__title2{
+    font-size: 25px; font-weight: 700; color: rgb(68, 66, 66); 
+}
+main section .card__box{
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 10px;
+}
+main section .card__box .card{
+    display: grid; grid-template-columns: 1fr 3fr;
+    /* 1:3 비율 */
+    border: 1px solid rgb(212, 210, 210); grid-gap: 10px; border-radius: 10px;
+    box-shadow: 0 0 3px 0 rgb(172, 170, 170);
+}
+main section .card__box .card>*{
+    height: 70px; background-size: 100% 100%; background-repeat: no-repeat;
+}
+main section div .card .card__img1{
+    background-image: url("../images/card1.jpg"); 
+
+}
+main section div .card .card__img2{
+    background-image: url("../images/card2.jpg"); 
+
+}
+main section div .card .card__img3{
+    background-image: url("../images/card3.jpg"); 
+
+}
+main section div .card .card__img4{
+    background-image: url("../images/card4.jpg"); 
+}
+main section div .card div:last-child{
+    display: grid; align-items: center; font-weight: 700; margin-left: 10px;
+}
+/* first section fine  */
+
+main section .ad1{
+    background-image: url("../images/ad1.jpg");
+    border-radius: 20px; margin: 40px 0; height: 350px; background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* sec section fine */
+
+section:nth-of-type(3){
+    margin-bottom: 40px;
+}
+section .choo__box{
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-gap: 20px;
+}
+section .choo__box>*{
+    background-size: 100% 100%; background-repeat: no-repeat; height: 250px;
+}
+section .choo__box div:first-of-type{
+    background-image: url("../images/choo1.png");
+}
+section .choo__box div:nth-of-type(2){
+    background-image: url("../images/choo2.png");
+}
+section .choo__box div:nth-of-type(3){
+    background-image: url("../images/choo3.png");
+}
+section .choo__box div:nth-of-type(4){
+    background-image: url("../images/choo4.png");
+}
+section .choo__box div:last-of-type{
+    background-image: url("../images/choo5.png");
+}
+
+/* third section fine */
+main section .ad2{
+    background-image: url("../images/ad2.png"); margin: 20px 0; height: 350px; background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/* forth section fine  */
+section .home__box{
+    margin-bottom: 80px; display: grid; grid-template-columns: repeat(4,1fr); grid-template-rows: auto;
+    grid-gap: 15px;
+}
+section .home__box .home{
+    display: inline-block;
+    
+}
+section .home__box .home>*,
+section .home__box .home >div:first-of-type{
+    width: 100%;
+}
+section .home__box .home >div:first-of-type{
+    background-size: 100% 100%; background-repeat: no-repeat; height: 150px;
+}
+section .home__box .home .home__img1{
+    background-image: url("../images/home1.png");
+}
+section .home__box .home .home__img2{
+    background-image: url("../images/home2.png");
+}
+section .home__box .home .home__img3{
+    background-image: url("../images/home3.png");
+}
+section .home__box .home .home__img4{
+    background-image: url("../images/home4.png");
+}
+section .home__box .home .home__img5{
+    background-image: url("../images/home5.png");
+}
+section .home__box .home .home__img6{
+    background-image: url("../images/home6.png");
+}
+section .home__box .home .home__img7{
+    background-image: url("../images/home7.png");
+}
+section .home__box .home .home__img8{
+    background-image: url("../images/home8.png");
+}
+section .home__box .home .home__info{
+    display: block; padding: 5px;
+}
+section .home__box .home .home__info div:first-child{
+    font-size: 14px; color: #6c6c6c; font-weight: 500;
+}
+section .home__box .home .home__info div:nth-child(2){
+    font-size: 16px; color: #000; font-weight: 700;
+}
+section .home__box .home .home__info div span:first-child{
+    color: hsl(232, 100%, 74%); font-size: 12px;
+}
+section .home__box .home .home__info div>*:not(:first-child){
+    font-size: 12px;
+}
+/* last section fine */
+footer{
+    height: 200px; width: 100%; background-color: #eee;
+}
+
+footer ul{
+    /* display: flex; justify-content: space-between; */
+    margin-bottom: 400px;
+}
+
+footer ul:after{
+    content: ''; display: block; clear: both; 
+}
+footer ul,footer p{
+    margin: 30px auto; width: 1200px; 
+}
+footer ul li{
+    padding: 10px; float: left; 
+}
+footer ul li:not(:last-of-type){
+    margin-right: 30px;
+}
+footer ul li a{
+    text-decoration: none; color: #000; font-weight: 700; font-size: 18px;
+    font-weight: 700;
+}
+footer p{
+    font-size: 16px;
+}
+
+
