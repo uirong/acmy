@@ -167,5 +167,11 @@ if(chk1 && chk2){
 // ^ window.open("문서,url","새창이름(선택)","창의옵션(어디 위치에 올릴건지 어떤걸 보이게 할것인가 어쩌구저쩌구~)");
 // 부모창 <-> 자식창
 
+// ! setInterval() : 일정시간의 간격을 두고 무한 반복
+// ! clearInterval() : 
+
+// ! setTimeout() : 일정시간 이후 한번만 실행
+// ! clearTimeout()
+
 
 
