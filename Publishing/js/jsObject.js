@@ -51,6 +51,12 @@ if(r==1){
     document.write("<img src='../images/bg5.jpg' width='100' height='100'>")
 }
 */
+
+
+
+
+
+
 // ! Array
 // ! 크기를 정하지 않는다
 // ! 값의 타입의 제항이 없다
@@ -89,4 +95,65 @@ document.write(result);
 result=arr1.slice(1,3); //? 1~2번을 잘라내겠다. == 배열을 새로 생성한다
 // ? 기존 배열의 데이터는 유효하게 새롭게 생성을 한다 0부터 2번까지~
 console.log(result);
+
+
+result=arr1.splice(2,1);
+console.log(result);
+
+result=arr2.pop(); // ! 마지막 값을 읽어온다(삭제)
+console.log(result);
+console.log(arr2)
+
+result=arr2.shift(); // ! 맨 앞쪽 값을 읽어온다(삭제)
+console.log(result);
+console.log(arr2);
+
+arr1.push(result); // ! 배열의 맨 뒤쪽에 삽입
+console.log(result);
+console.log(arr1);
+
+arr2.unshift(result); // ! 배열의 맨 앞쪽에 삽입
+console.log(result)
+console.log(arr2)
+
+
+
+
+// ^ 문자열 객체
+// ^ 인덱스 번호
+// ^ chatAt(). indexOf(),substring()
+// ^ length
+
+// let str3="kim";
+// let str3=new String("kim");
+let userName = prompt("이름 입력:", " ");
+document.write(userName,"<br>");
+let userNum = prompt("번호 입력(구분없이입력):", " 01054432762");
+let result7 = userNum.substring(0,userNum.length-4) + "****" ;
+document.write(result7);
+
+
+let userEmail =prompt("이메일주소","");
+let arrUrl=[".co.kr",".com",".net",".or.kr","go.kr"];
+let chk1=false; // @
+let chk2=false; // arrUrl
+
+let chk0=userEmail.indexOf("@");
+console.log(chk0);
+
+
+if(userEmail.indexOf('@')>0){ // indexof를 하면 중간에 들어가야하니까 0보다는 커야함(최소 아이디가 1자 이상일테니)
+    chk1=true;
+}
+for(let i=0;i<arrUrl.length;i++){
+    if(userEmail.indexOf(arrUrl[i])>0){ // userEmail에서 arrUrl의 i번째들 중에 들어있는게 0보다 크면 ... 못찾으면 -1이기 때문에 0보다 큰...
+        chk2=true;
+    }
+}
+if(chk1 && chk2){
+    document.write(userEmail);
+}else{
+    alert("이메일 형식이 부적합 합니다.");
+}
+
 
