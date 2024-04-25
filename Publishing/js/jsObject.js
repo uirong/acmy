@@ -157,3 +157,15 @@ if(chk1 && chk2){
 }
 
 
+
+// 브라우저 객체
+// 브라우저 기능을 활용하는 용도
+
+
+// ! alert() , prompt(), confirm(), open(), close()
+// window.alert("hello World!"); // window생략가능
+// ^ window.open("문서,url","새창이름(선택)","창의옵션(어디 위치에 올릴건지 어떤걸 보이게 할것인가 어쩌구저쩌구~)");
+// 부모창 <-> 자식창
+
+
+
