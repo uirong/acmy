@@ -1,0 +1,1 @@
+window.open("jsWinPop.html","pop1","width=300px,height=400px,left=300px,top=50px")
