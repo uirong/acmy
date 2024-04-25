@@ -87,4 +87,6 @@ console.log(result);
 document.write(result);
 
 result=arr1.slice(1,3); //? 1~2번을 잘라내겠다. == 배열을 새로 생성한다
+// ? 기존 배열의 데이터는 유효하게 새롭게 생성을 한다 0부터 2번까지~
 console.log(result);
+
