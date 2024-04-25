@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>윈도우C</title>
     <script src="../js/jsWinC.js"></script>
+
 </head>
 <body>
     <h1>Child</h1>
     <p>
-        <input type="text" id="childValue">
+        <input type="text" id="childValue" value="">
         <input type="button" value="send window" onclick="sendVal()">
-
     </p>
+
+    <!-- <script>
+        document.getElementById("childValue").value = window.opener.document.getElementById("parenValue").value;
+        
+        function sendVal(){
+            window.opener.document.getElementById("parenValue").value = document.getElementById("childValue").value
+            window.close();
+        }
+    </script> -->
 </body>
 </html>
