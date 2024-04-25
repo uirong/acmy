@@ -2,7 +2,9 @@
 // ? 본인을 열게 해준 원인(?) 을 opener라고 함
 
  //부모 -> 자식
- document.getElementById("childvalue").value = window.opener.document.getElementById("parenValue").value;
+ 
+// document.getElementById("childvalue").value = window.opener.document.getElementById("parenValue").value;
+
  // 객체 형태로 가져올 수 있음
  //getElementById("childvalue") = input 태그
  //value 속성으로 태그의 정보를 가져온다 -> 값을 삽입
@@ -10,9 +12,17 @@
 
 // & 부모가 가지고 있는 값을 자식이 가지게 된다
 
-function sendVal() {
-    window.opener.document.getElementById("parenValue").value = document.getElementById("childvalue").value;
+// function sendVal() {
+//     window.opener.document.getElementById("parentValue").value = document.getElementById("childvalue").value;
+//     window.close();
+// }
+
+window.addEventListener('DOMContentLoaded', function(){
+    document.getElementById("childValue").value = window.opener.document.getElementById("parenValue").value;
+});
+
+
+function sendVal(){
+    window.opener.document.getElementById("parenValue").value = document.getElementById("childValue").value
     window.close();
 }
-
-
