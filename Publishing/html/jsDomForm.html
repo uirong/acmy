@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form태그 운영하기</title>
+    <!-- <script src="https://code.jquery.com/jquery-latest.min.jss"></script> -->
+    <script src="../js/jsDomForm.js"></script>
+</head>
+<body>
+    <form action="https://www.github.com/uirong" name="memfrm" onsubmit="return memChk(this)"> 
+        <!-- ? 이벤트가 발생하는 곳 : 핸들러 -->
+        <fieldset>
+            <table>
+                <tr>
+                    <td>
+                        <td><lable>아이디</lable></td>
+                    </td>
+                    <td>
+                        <input type="text" name="id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <td><lable>비밀번호</lable></td>
+                    </td>
+                    <td>
+                        <input type="password" name="pwd1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <td><lable>비밀번호확인</lable></td>
+                    </td>
+                    <td>
+                        <input type="text" name="pwd2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <td><lable>이메일</lable></td>
+                    </td>
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <td><lable>성별</lable></td>
+                    </td>
+                    <td>
+                        <!-- checked="checked" 사용시 기본 체크 -->
+                        <input type="radio" name="gender" value="m">남자
+                        <!-- ! checked == true 라는 뜻 -->
+                        <input type="radio" name="gender" value="f">여자
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <td><lable>직업</lable></td>
+                    </td>
+                    <td>
+                        <select name="job">
+                            <option value="">직업선택</option>
+                            <option value="job1">회사원</option>
+                            <option value="job2">운동선수</option>
+                            <option value="job3">개발자</option>
+                            <option value="job4">etc.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <td><lable>관심분야</lable></td>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="h1" class="chk">게임
+                        <input type="checkbox" name="hobby" value="h2" class="chk">독서
+                        <input type="checkbox" name="hobby" value="h3" class="chk">영화
+                        <input type="checkbox" name="hobby" value="h4" class="chk">산책
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>가입인사</label></td>
+                    <td><textarea cols="25" rows="7" name="content"></textarea></td>
+                </tr>
+            </table>
+            <input type="submit" value="회원가입">
+            <input type="reset" value="취소">
+        </fieldset>
+    </form>
+</body>
+</html>
