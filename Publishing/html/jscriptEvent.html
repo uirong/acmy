@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 이벤트</title>
+    <script src="../js/jscriptEvent.js"></script>
+</head>
+<body>  
+    <!--! 1. 인라인 정의 방식 -->
+    <input type="button" onclick="alert('hello World '+this.value)" value="인라인이벤트">
+    <!-- this.value : 인라인 이벤트를 의미한다 this : 자기자신(this)을 의미 -->
+    <input type="button" id="target" value="내부이벤트">
+    <ul>
+        <li><a href="#">첫번째 탭 내용</a></li>
+        <li><a href="#">두번째 탭 내용</a></li>
+        <li><a href="#">세번째 탭 내용</a></li>
+        <li><a href="#">네번째 탭 내용</a></li>
+    </ul>
+    
+</body>
+</html>
