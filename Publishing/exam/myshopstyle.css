@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{padding: 0; margin: 0; box-sizing: border-box; list-style: none; 
+	text-decoration: none;}
+/* all set */
+
+body {
+	font-family: "나눔고딕", "맑은 고딕", "돋움", Dotum, Verdana, Tahoma;
+	font-size: 9pt;
+	line-height:160%
+	color: #000;
+	padding:0px;
+	margin:0px;	
+}
+
+img{
+	border:0px;
+}
+
+
+
+
+.wrap{
+	width:925px;
+	margin:0 auto;	
+	padding:0px;
+}
+
+
+
+
+/*상단*/
+
+#page_header{
+	width: 925px;clear: both; float: left;
+
+}
+
+#page_header .topmini {
+	clear: both;
+	float: right;
+	background-color: #efefef;
+	height: 30px;
+	width: 300px;
+	padding-left: 625px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	position: relative;
+}
+
+#page_header .topmini ul {
+	list-style-type: none; 
+	margin: 0px;
+	padding: 0px; position: absolute; right: 0;
+}
+#page_header .topmini ul li {
+	display: block; float: left;
+	width: 80px; text-align: center; padding: 8px 0;
+}
+#page_header .topmini ul li a{
+	 color: #000; 
+}
+#page_header .p_header1 {
+	clear: both;
+	float: left;
+	height: 63px;
+}
+#page_header .p_header1 .toplogo {
+	float: left;
+	height: 33px;
+	width: 257px;
+	margin-top: 21px;
+}
+#page_header .p_header1 .topban {
+	height: 63px;
+	width: 279px;
+	float: left;
+	margin-left: 380px;
+}
+#page_header .p_header2 {
+	clear: both;
+	float: left;
+	width: 925px;
+	height: 42px;
+}
+#page_header .p_header2 ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#page_header .p_header2 ul li a {
+	margin: 0px; 
+	padding: 0px;
+	float: left;
+	display: block;
+}
+
+
+
+/*중앙부분 스타일*/
+#page_center {
+	
+}
+
+.titleframe1 img {
+	
+	float: left;	
+}
+.titleframe1 ul{
+	
+}
+.titleframe1 ul:after {
+	content: ''; clear: both; display: block;
+}
+.titleframe1 ul li {
+	float: left; margin-top: 15px; font-size: 14px; text-align: center;
+}
+.titleframe1 ul li:not(:last-of-type){
+	margin-right: 10px;
+}
+.titleframe1 ul li a{
+	 color: #000;
+}
+.titleframe2 {
+	background-image: url('../exam/images/style_bar.jpg'); background-repeat: no-repeat;
+	margin: 10px 0;
+}
+.titleframe2 p{	
+	padding: 15px 10px;
+}
+.titleframe2 .boldtext {
+	color: #ff0000; font-weight: 700;
+}
+.titleframe3 {
+	width: 100%; height: 40px; position: absolute; bottom: -180px;
+	background-image: url('../exam/images/style_bar2.jpg'); background-repeat: no-repeat;
+}
+a {
+	
+}
+a:hover {
+
+}
+#page_center .titleframe1 ul li a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+.items{
+	margin: 0 auto;
+}
+
+
+.items .item p {
+	
+}
+
+.items .item {
+	float: left; width: 25%; position: relative;	
+	margin-bottom: 50px; overflow: hidden;
+}
+
+
+.items .item img{
+	width: 200px; height: 280px; 
+	margin-left: 15px;
+}
+
+.item .mask {
+	position: absolute; z-index: 100; background-color: rgba(255,255,255,0.8);
+	width: 200px; height: 80px; bottom: -45px; text-align: center; font-size: 12px;
+	padding: 10px; margin-left: 15px;
+	opacity: 1;
+}
+.item:hover  .mask{
+	transform: translateY(-45px); transition-duration: 1.3s; opacity: 1;
+}
+.item .mask p>a{
+	color: #000;
+}
+.item .mask p:first-of-type {
+	margin-bottom: 10px;
+}
+.item .mask p:first-of-type a{
+	font-size: 14px; 
+}
+.item .mask:hover {
+	
+}
+
+footer{
+	height: 220px; position: absolute; bottom: -400px;
+	width: 925px; background-color: #2c2c2c; 
+}
+
+footer img{
+	width: 230px; height: 110px; margin: 50px 20px 50px 30px
+}
+footer::after{
+	content: ''; clear: both; display: block;
+}
+footer>*{
+	float: left;
+}
+footer div{
+	 display: inline-block; margin: 30px 0;
+}
+footer div:first-of-type{
+	width: 25%; margin-top: 50px;
+}
+footer div:last-of-type{
+	width: 40%;
+}
+footer div>*{
+	font-size: 10px;
+	color: #818181; line-height: 20px;
+}
+footer div span{
+	display: block; font-weight: 700; color: #fff;
+}
