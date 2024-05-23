@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.ToString;
 @AllArgsConstructor
 @ToString
-public class Student {
+public class Student implements Comparable {
 		
 		String name;
 		int ban, no, kor, eng , math;
@@ -19,13 +19,18 @@ public class Student {
 		}
 		
 		
-//		@Override
+		@Override
 		public int compareTo(Object o) { // Object o=> Student ..  object니까 type체크를 해줘야한다
 			if(o instanceof Student) {
 				// 여전히 Object type이기 때문에 student 타입으로 바꿔줘야한다
 				Student other = (Student)o; // 멤버변수를 각각 사용할 수 있게 된다
 				
-				return this.name.compareTo(other.name); // 오름차순 ..매개변수를 받은 other에게 name값을 준다
+				
+				return other.no - this.no; // 내림차순
+//				return this.no - other.no; // 오름차순 음수 or 0 or 양수 ...3개중 하나를 반환 하게 된다
+				
+//				return this.name.compareTo(other.name); // 오름차순 ..매개변수를 받은 other에게 name값을 준다
+//				return this.name.compareTo(other.name)*-1; // 내림차순
 			}
 			return -1;
 		}
